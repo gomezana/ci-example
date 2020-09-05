@@ -20,7 +20,7 @@ describe('useFilterUsers specs', () => {
 
     await waitForNextUpdate();
     expect(getUserByFilterStub).toHaveBeenCalledWith(filter);
-    expect(result.current.users).toEqual(['John Doe', 'Jane']);
+    expect(result.current.users).toEqual(['John Doe', 'Jane Doe']);
   });
 
   it('should call getUsersByFilter only one time when it calls filterUsers with same filter two times', async () => {
